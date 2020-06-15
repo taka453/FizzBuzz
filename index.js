@@ -51,3 +51,25 @@
 //         console.log(i);
 //     }
 // }
+
+/*===
+
+要件定義変更
+FizzBuzzの仕様が変わって3が2になり5が4になり6が追加された。という想定のものを現在のFizzBuzzをもとに修正してみてください。
+追加の要件として6の時は必ずHogeと出力するとします。
+
+===*/
+
+for(let i = 1; i < 100; i++) {
+    if(i % 2 === 0 && i % 4 === 0 && i % 6 === 0) {
+        console.log("FizzBuzz");
+    } else if(i % 6 === 0) {
+        console.log("hoge");
+    } else if(i % 4 === 0) {
+        console.log("Buzz");
+    } else if(i % 2 === 0) {
+        console.log("Fizz");
+    } else {
+        console.log(i);
+    }
+}
